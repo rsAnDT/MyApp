@@ -54,11 +54,12 @@ pnpm android
    - compress-image : toi uu assets, tự động chạy tool nén ảnh, tạo pull request chứa ảnh đã nén khi có push hoặc pull request chứa ảnh mới
    - new-app-version : mục đích tạo ra 1 tag mới , có thể chọn branch và minor, major hoặc patch rồi nó sẽ tự đánh version cho tag
 5. Khi build release development hoặc stg
-   - Chạy lệnh build ipa hoặc apk ít nhất 1 lần dưới local trước để eas lấy được profile + keystore đẩy lên đã
+   - Chạy lệnh build ipa hoặc apk (cho đủ các môi trường) ít nhất 1 lần dưới local trước để eas lấy được profile + keystore đẩy lên đã
    - Khi thành công rồi thì mỗi lần cần build auto thì có 2 cách build:
      1. Lên github action chọn "EAS QA Build Dev (Android & IOS) (EAS)" rồi chọn nhánh cần build là nó build
      2. Vào chỗ tag , chọn tag cần build và tạo release và release note xong là nó sẽ tự chạy
      3. Chú ý : Hiện tại đang auto là build developmnent để test , nếu muốn sửa thành stg thì vào .github/workflows/eas-build-qa để sửa rồi push code lên
+6. Chú ý khi build chuyển đổi môi trường để nhận bundler id và package name khác nhau thì cần chạy prebuild trước sau đó mới chạy eas build. Nếu không thì nó sẽ luôn luôn nhận profile ở môi trường gần nhất chạy prebuild
 
 ## ✍️ Git commit lint
 

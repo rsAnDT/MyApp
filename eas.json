@@ -38,6 +38,7 @@
       }
     },
     "development": {
+      "channel": "development",
       "distribution": "internal",
       "pnpm": "9.12.3",
       "ios": {

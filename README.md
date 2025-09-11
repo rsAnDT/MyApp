@@ -59,3 +59,15 @@ pnpm android
      1. Lên github action chọn "EAS QA Build Dev (Android & IOS) (EAS)" rồi chọn nhánh cần build là nó build
      2. Vào chỗ tag , chọn tag cần build và tạo release và release note xong là nó sẽ tự chạy
      3. Chú ý : Hiện tại đang auto là build developmnent để test , nếu muốn sửa thành stg thì vào .github/workflows/eas-build-qa để sửa rồi push code lên
+
+## ✍️ Git commit lint
+
+1. Direct commits to the master branch are not allowed. Please choose a new branch name.
+   husky - pre-commit script failed (code 1) => can tao branch moi
+2. <type>(optional-scope): <subject>
+   - type = feat | fix | chore | docs | refactor | test | style | build | ci
+   - scope = phạm vi (tùy chọn, có thể bỏ)
+   - subject = mô tả ngắn gọn commit
+   - Fix bug : ví dụ git commit -m "fix(auth): wrong token handling" hoặc git commit -m "fix(staging): fix mt config"
+   - Thêm tính năng : ví dụ git commit -m "feat(profile): add avatar upload"
+   - Cập nhật cấu hình : ví dụ git commit -m "chore(config): update env for staging"

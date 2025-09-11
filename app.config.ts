@@ -8,8 +8,14 @@ let bundleId = Env.BUNDLE_ID;
 let packageName = Env.PACKAGE;
 
 if (Env.APP_ENV === 'production') {
-  bundleId = 'runsystem.net.gmo';
-  packageName = 'runsystem.net.gmo';
+  bundleId = 'gzr.bsd.dev4';
+  packageName = 'com.andt';
+} else if (Env.APP_ENV === 'staging') {
+  bundleId = 'gzr.bsd.dev3';
+  packageName = 'com.andt.stg';
+} else if (Env.APP_ENV === 'development') {
+  bundleId = Env.BUNDLE_ID;
+  packageName = Env.PACKAGE;
 }
 
 const appIconBadgeConfig: AppIconBadgeConfig = {

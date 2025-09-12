@@ -72,3 +72,8 @@ pnpm android
    - Fix bug : ví dụ git commit -m "fix(auth): wrong token handling" hoặc git commit -m "fix(staging): fix mt config"
    - Thêm tính năng : ví dụ git commit -m "feat(profile): add avatar upload"
    - Cập nhật cấu hình : ví dụ git commit -m "chore(config): update env for staging"
+
+## ✍️ Chu y eas.json
+
+- enterpriseProvisioning : universal | adhoc (set cai nay de github action biet dung cai nao khi build)
+- "channel": "staging" : them cai nay , chi khi nao dung expo-updates , con khong thi bo di

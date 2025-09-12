@@ -13,7 +13,7 @@ if (Env.APP_ENV === 'production') {
 } else if (Env.APP_ENV === 'staging') {
   bundleId = 'gzr.bsd.dev3';
   packageName = 'com.andt.stg';
-} else if (Env.APP_ENV === 'development') {
+} else {
   bundleId = Env.BUNDLE_ID;
   packageName = Env.PACKAGE;
 }

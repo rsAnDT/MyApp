@@ -12,6 +12,11 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
 
 import { APIProvider } from '@/api';
+import {
+  ConfirmDialog,
+  LoadingModal,
+  NetworkErrorModal,
+} from '@/components/ui';
 import { hydrateAuth, loadSelectedTheme } from '@/lib';
 import { useThemeConfig } from '@/lib/use-theme-config';
 
@@ -43,7 +48,11 @@ export default function RootLayout() {
   );
 }
 
-function Providers({ children }: { children: React.ReactNode }) {
+type ProvidersProps = {
+  readonly children: React.ReactNode;
+};
+
+function Providers({ children }: ProvidersProps) {
   const theme = useThemeConfig();
   return (
     <GestureHandlerRootView
@@ -55,6 +64,9 @@ function Providers({ children }: { children: React.ReactNode }) {
           <APIProvider>
             <BottomSheetModalProvider>
               {children}
+              <LoadingModal />
+              <NetworkErrorModal />
+              <ConfirmDialog />
               <FlashMessage position="top" />
             </BottomSheetModalProvider>
           </APIProvider>

@@ -1,4 +1,22 @@
 {
+  "auth": {
+    "signing_in": "Signing in..."
+  },
+  "common": {
+    "cancel": "Cancel",
+    "ok": "OK"
+  },
+  "confirm": {
+    "login": {
+      "description": "Are you sure you want to log in?",
+      "title": "Confirm login"
+    }
+  },
+  "network": {
+    "message": "Unable to connect. Please check your internet and try again.",
+    "ok": "Got it",
+    "title": "Network error"
+  },
   "onboarding": {
     "message": "Welcome to obytes app site"
   },
@@ -27,6 +45,7 @@
     },
     "title": "Settings",
     "version": "Version",
+    "vietnamese": "Vietnamese",
     "website": "Website"
   },
   "welcome": "Welcome to obytes app site"

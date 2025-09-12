@@ -1,4 +1,4 @@
-package gzr.bsd.dev
+package com.andt.dev
 import com.facebook.react.common.assets.ReactFontManager
 
 import android.app.Application

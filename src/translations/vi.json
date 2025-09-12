@@ -1,0 +1,52 @@
+{
+  "auth": {
+    "signing_in": "Đang đăng nhập..."
+  },
+  "common": {
+    "cancel": "Hủy",
+    "ok": "Đồng ý"
+  },
+  "confirm": {
+    "login": {
+      "description": "Bạn có chắc muốn đăng nhập?",
+      "title": "Xác nhận đăng nhập"
+    }
+  },
+  "network": {
+    "message": "Không thể kết nối. Vui lòng kiểm tra internet và thử lại.",
+    "ok": "Đã hiểu",
+    "title": "Lỗi mạng"
+  },
+  "onboarding": {
+    "message": "Chào mừng bạn đến với ứng dụng obytes"
+  },
+  "settings": {
+    "about": "Giới thiệu",
+    "app_name": "Tên ứng dụng",
+    "arabic": "Tiếng Ả Rập",
+    "english": "Tiếng Anh",
+    "generale": "Chung",
+    "github": "Github",
+    "language": "Ngôn ngữ",
+    "links": "Liên kết",
+    "logout": "Đăng xuất",
+    "more": "Thêm",
+    "privacy": "Chính sách quyền riêng tư",
+    "rate": "Đánh giá",
+    "share": "Chia sẻ",
+    "support": "Hỗ trợ",
+    "support_us": "Ủng hộ chúng tôi",
+    "terms": "Điều khoản dịch vụ",
+    "theme": {
+      "dark": "Tối",
+      "light": "Sáng",
+      "system": "Hệ thống",
+      "title": "Giao diện"
+    },
+    "title": "Cài đặt",
+    "version": "Phiên bản",
+    "vietnamese": "Tiếng Việt",
+    "website": "Trang web"
+  },
+  "welcome": "Chào mừng đến với ứng dụng obytes"
+}

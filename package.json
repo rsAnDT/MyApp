@@ -23,7 +23,7 @@
     "ios:production": "cross-env APP_ENV=production pnpm run ios",
     "build:development:ios": "cross-env APP_ENV=development EXPO_NO_DOTENV=1 eas build -p ios --profile development",
     "build:development:android": "cross-env APP_ENV=development EXPO_NO_DOTENV=1 eas build --profile development --platform android ",
-    "build:staging:ios": "cross-env APP_ENV=staging EXPO_NO_DOTENV=1 eas build --profile staging --platform ios",
+    "build:staging:ios": "cross-env APP_ENV=staging EXPO_NO_DOTENV=1 eas build -p ios --profile staging",
     "build:staging:android": "cross-env APP_ENV=staging EXPO_NO_DOTENV=1 eas build --profile staging --platform android ",
     "build:production:ios": "cross-env APP_ENV=production EXPO_NO_DOTENV=1 eas build --profile production --platform ios",
     "build:production:android": "cross-env APP_ENV=production EXPO_NO_DOTENV=1 eas build --profile production --platform android ",
@@ -38,7 +38,9 @@
     "test:ci": "pnpm run test --coverage",
     "test:watch": "pnpm run test --watch",
     "install-maestro": "curl -Ls 'https://get.maestro.mobile.dev' | bash",
-    "e2e-test": "maestro test .maestro/ -e APP_ID=com.obytes.development"
+    "e2e-test": "maestro test .maestro/ -e APP_ID=com.obytes.development",
+    "update-profile-ios": "eas credentials -p ios",
+    "update-keystore-android": "eas credentials -p android"
   },
   "dependencies": {
     "@expo/metro-runtime": "^5.0.4",
@@ -56,6 +58,7 @@
     "expo-image": "~2.3.0",
     "expo-linking": "~7.1.5",
     "expo-localization": "~16.1.5",
+    "expo-network": "~6.0.1",
     "expo-router": "~5.1.0",
     "expo-splash-screen": "~0.30.9",
     "expo-status-bar": "~2.2.3",

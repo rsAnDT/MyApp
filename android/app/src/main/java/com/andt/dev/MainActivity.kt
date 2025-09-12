@@ -1,4 +1,4 @@
-package gzr.bsd.dev
+package com.andt.dev
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build

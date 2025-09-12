@@ -1,6 +1,7 @@
 {
   "cli": {
-    "version": ">= 3.8.1"
+    "version": ">= 3.8.1",
+    "appVersionSource": "remote"
   },
   "build": {
     "production": {
@@ -21,11 +22,12 @@
       }
     },
     "staging": {
-      "channel": "staging",
       "distribution": "internal",
       "pnpm": "9.12.3",
+      "enterpriseProvisioning": "adhoc",
       "ios": {
-        "image": "latest"
+        "image": "latest",
+        "enterpriseProvisioning": "adhoc"
       },
       "android": {
         "buildType": "apk",
@@ -38,11 +40,12 @@
       }
     },
     "development": {
-      "channel": "development",
       "distribution": "internal",
       "pnpm": "9.12.3",
+      "enterpriseProvisioning": "adhoc",
       "ios": {
-        "image": "latest"
+        "image": "latest",
+        "enterpriseProvisioning": "adhoc"
       },
       "android": {
         "image": "latest"

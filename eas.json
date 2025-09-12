@@ -24,10 +24,8 @@
     "staging": {
       "distribution": "internal",
       "pnpm": "9.12.3",
-      "enterpriseProvisioning": "adhoc",
       "ios": {
-        "image": "latest",
-        "enterpriseProvisioning": "adhoc"
+        "image": "latest"
       },
       "android": {
         "buildType": "apk",
@@ -42,10 +40,8 @@
     "development": {
       "distribution": "internal",
       "pnpm": "9.12.3",
-      "enterpriseProvisioning": "adhoc",
       "ios": {
-        "image": "latest",
-        "enterpriseProvisioning": "adhoc"
+        "image": "latest"
       },
       "android": {
         "image": "latest"

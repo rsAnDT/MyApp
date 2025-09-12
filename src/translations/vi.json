@@ -4,6 +4,7 @@
   },
   "common": {
     "cancel": "Hủy",
+    "create": "Tạo",
     "ok": "Đồng ý"
   },
   "confirm": {
@@ -12,13 +13,57 @@
       "title": "Xác nhận đăng nhập"
     }
   },
+  "errors": {
+    "401": "Bạn chưa được xác thực. Vui lòng đăng nhập lại.",
+    "403": "Bạn không có quyền thực hiện hành động này.",
+    "503": "Dịch vụ tạm thời không hoạt động. Vui lòng thử lại sau.",
+    "504": "Cổng trung gian quá thời gian. Vui lòng kiểm tra mạng và thử lại.",
+    "loading_data": "Lỗi tải dữ liệu",
+    "loading_post": "Lỗi tải bài viết",
+    "title": "Lỗi",
+    "unknown": "Đã có lỗi xảy ra."
+  },
+  "feed": {
+    "loading": "Đang tải dữ liệu..."
+  },
+  "list": {
+    "empty": "Rất tiếc! Không có dữ liệu"
+  },
+  "login": {
+    "fields": {
+      "email": "Email",
+      "name": "Tên",
+      "password": "Mật khẩu"
+    },
+    "submit": "Đăng nhập",
+    "subtitle": "Chào mừng! 👋 Đây là màn hình đăng nhập demo! Bạn có thể dùng bất kỳ email và mật khẩu để thử.",
+    "title": "Đăng nhập"
+  },
   "network": {
     "message": "Không thể kết nối. Vui lòng kiểm tra internet và thử lại.",
     "ok": "Đã hiểu",
     "title": "Lỗi mạng"
   },
+  "not_found": {
+    "go_home": "Đi tới màn hình chính!",
+    "message": "Màn hình này không tồn tại.",
+    "title": "Rất tiếc!"
+  },
   "onboarding": {
-    "message": "Chào mừng bạn đến với ứng dụng obytes"
+    "cta": "Bắt đầu",
+    "features": {
+      "dx": "🥷 Trải nghiệm lập trình viên + Năng suất",
+      "maintained": "💪 Thư viện bên thứ ba được duy trì tốt",
+      "minimal": "🧩 Tối giản mã nguồn và phụ thuộc",
+      "production": "🚀 Sẵn sàng cho sản xuất"
+    },
+    "message": "Chào mừng bạn đến với ứng dụng AnDT",
+    "subtitle": "Cách đúng đắn để xây dựng ứng dụng di động",
+    "title": "AnDT Starter"
+  },
+  "post": {
+    "back": "Bảng tin",
+    "title": "Bài viết"
   },
   "settings": {
     "about": "Giới thiệu",
@@ -48,5 +93,16 @@
     "vietnamese": "Tiếng Việt",
     "website": "Trang web"
   },
-  "welcome": "Chào mừng đến với ứng dụng obytes"
+  "tabs": {
+    "feed": "Bảng tin",
+    "settings": "Cài đặt",
+    "style": "Kiểu dáng"
+  },
+  "validation": {
+    "email_invalid": "Định dạng email không hợp lệ",
+    "email_required": "Vui lòng nhập email",
+    "password_min": "Mật khẩu tối thiểu 6 ký tự",
+    "password_required": "Vui lòng nhập mật khẩu"
+  },
+  "welcome": "Chào mừng đến với ứng dụng AnDT"
 }

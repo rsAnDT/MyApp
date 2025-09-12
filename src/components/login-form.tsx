@@ -6,28 +6,33 @@ import { KeyboardAvoidingView } from 'react-native-keyboard-controller';
 import * as z from 'zod';
 
 import { Button, ControlledInput, Text, View } from '@/components/ui';
+import { translate } from '@/lib';
 
-const schema = z.object({
-  name: z.string().optional(),
-  email: z
-    .string({
-      required_error: 'Email is required',
-    })
-    .email('Invalid email format'),
-  password: z
-    .string({
-      required_error: 'Password is required',
-    })
-    .min(6, 'Password must be at least 6 characters'),
-});
-
-export type FormType = z.infer<typeof schema>;
+export type FormType = {
+  name?: string;
+  email: string;
+  password: string;
+};
 
 export type LoginFormProps = {
   onSubmit?: SubmitHandler<FormType>;
 };
 
 export const LoginForm = ({ onSubmit = () => {} }: LoginFormProps) => {
+  const schema = React.useMemo(
+    () =>
+      z.object({
+        name: z.string().optional(),
+        email: z
+          .string({ required_error: translate('validation.email_required') })
+          .email(translate('validation.email_invalid')),
+        password: z
+          .string({ required_error: translate('validation.password_required') })
+          .min(6, translate('validation.password_min')),
+      }),
+    []
+  );
+
   const { handleSubmit, control } = useForm<FormType>({
     resolver: zodResolver(schema),
   });
@@ -43,12 +48,11 @@ export const LoginForm = ({ onSubmit = () => {} }: LoginFormProps) => {
             testID="form-title"
             className="pb-6 text-center text-4xl font-bold"
           >
-            Sign In
+            {translate('login.title')}
           </Text>
 
           <Text className="mb-6 max-w-xs text-center text-gray-500">
-            Welcome! 👋 This is a demo login screen! Feel free to use any email
-            and password to sign in and try it out.
+            {translate('login.subtitle')}
           </Text>
         </View>
 
@@ -56,26 +60,26 @@ export const LoginForm = ({ onSubmit = () => {} }: LoginFormProps) => {
           testID="name"
           control={control}
           name="name"
-          label="Name"
+          label={translate('login.fields.name')}
         />
 
         <ControlledInput
           testID="email-input"
           control={control}
           name="email"
-          label="Email"
+          label={translate('login.fields.email')}
         />
         <ControlledInput
           testID="password-input"
           control={control}
           name="password"
-          label="Password"
+          label={translate('login.fields.password')}
           placeholder="***"
           secureTextEntry={true}
         />
         <Button
           testID="login-button"
-          label="Login"
+          label={translate('login.submit')}
           onPress={handleSubmit(onSubmit)}
         />
       </View>

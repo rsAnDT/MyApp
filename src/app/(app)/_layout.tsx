@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unstable-nested-components */
 import { Link, Redirect, SplashScreen, Tabs } from 'expo-router';
 import React, { useCallback, useEffect } from 'react';
 
@@ -8,7 +7,7 @@ import {
   Settings as SettingsIcon,
   Style as StyleIcon,
 } from '@/components/ui/icons';
-import { useAuth, useIsFirstTime } from '@/lib';
+import { translate, useAuth, useIsFirstTime } from '@/lib';
 
 export default function TabLayout() {
   const status = useAuth.use.status();
@@ -35,7 +34,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Feed',
+          title: translate('tabs.feed'),
           tabBarIcon: ({ color }) => <FeedIcon color={color} />,
           headerRight: () => <CreateNewPostLink />,
           tabBarButtonTestID: 'feed-tab',
@@ -45,7 +44,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="style"
         options={{
-          title: 'Style',
+          title: translate('tabs.style'),
           headerShown: false,
           tabBarIcon: ({ color }) => <StyleIcon color={color} />,
           tabBarButtonTestID: 'style-tab',
@@ -54,7 +53,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="settings"
         options={{
-          title: 'Settings',
+          title: translate('tabs.settings'),
           headerShown: false,
           tabBarIcon: ({ color }) => <SettingsIcon color={color} />,
           tabBarButtonTestID: 'settings-tab',
@@ -68,7 +67,9 @@ const CreateNewPostLink = () => {
   return (
     <Link href="/feed/add-post" asChild>
       <Pressable>
-        <Text className="px-3 text-primary-300">Create</Text>
+        <Text className="px-3 text-primary-300">
+          {translate('common.create')}
+        </Text>
       </Pressable>
     </Link>
   );

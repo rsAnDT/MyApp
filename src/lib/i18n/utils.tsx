@@ -26,11 +26,8 @@ export const translate = memoize(
 
 export const changeLanguage = (lang: Language) => {
   i18n.changeLanguage(lang);
-  if (lang === 'ar') {
-    I18nManager.forceRTL(true);
-  } else {
-    I18nManager.forceRTL(false);
-  }
+  const isLangRTL = i18n.dir(lang) === 'rtl';
+  I18nManager.forceRTL(isLangRTL);
   if (Platform.OS === 'ios' || Platform.OS === 'android') {
     if (__DEV__) NativeModules.DevSettings.reload();
     else RNRestart.restart();
@@ -45,7 +42,7 @@ export const useSelectedLanguage = () => {
   const setLanguage = useCallback(
     (lang: Language) => {
       setLang(lang);
-      if (lang !== undefined) changeLanguage(lang as Language);
+      if (lang !== undefined) changeLanguage(lang);
     },
     [setLang]
   );

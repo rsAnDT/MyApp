@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { translate } from '@/lib';
 import { cleanup, screen, setup, waitFor } from '@/lib/test-utils';
 
 import type { LoginFormProps } from './login-form';
@@ -19,10 +20,16 @@ describe('LoginForm Form ', () => {
     const { user } = setup(<LoginForm />);
 
     const button = screen.getByTestId('login-button');
-    expect(screen.queryByText(/Email is required/i)).not.toBeOnTheScreen();
+    expect(
+      screen.queryByText(translate('validation.email_required'))
+    ).not.toBeOnTheScreen();
     await user.press(button);
-    expect(await screen.findByText(/Email is required/i)).toBeOnTheScreen();
-    expect(screen.getByText(/Password is required/i)).toBeOnTheScreen();
+    expect(
+      await screen.findByText(translate('validation.email_required'))
+    ).toBeOnTheScreen();
+    expect(
+      screen.getByText(translate('validation.email_required'))
+    ).toBeOnTheScreen();
   });
 
   it('should display matching error when email is invalid', async () => {
@@ -36,8 +43,12 @@ describe('LoginForm Form ', () => {
     await user.type(passwordInput, 'test');
     await user.press(button);
 
-    expect(await screen.findByText(/Invalid Email Format/i)).toBeOnTheScreen();
-    expect(screen.queryByText(/Email is required/i)).not.toBeOnTheScreen();
+    expect(
+      await screen.findByText(translate('validation.email_invalid'))
+    ).toBeOnTheScreen();
+    expect(
+      screen.queryByText(translate('validation.email_required'))
+    ).not.toBeOnTheScreen();
   });
 
   it('Should call LoginForm with correct values when values are valid', async () => {

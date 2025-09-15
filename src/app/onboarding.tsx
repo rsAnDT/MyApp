@@ -9,9 +9,10 @@ import {
   Text,
   View,
 } from '@/components/ui';
+import { translate } from '@/lib';
 import { useIsFirstTime } from '@/lib/hooks';
 export default function Onboarding() {
-  const [_, setIsFirstTime] = useIsFirstTime();
+  const [, setIsFirstTime] = useIsFirstTime();
   const router = useRouter();
   return (
     <View className="flex h-full items-center  justify-center">
@@ -21,28 +22,28 @@ export default function Onboarding() {
       </View>
       <View className="justify-end ">
         <Text className="my-3 text-center text-5xl font-bold">
-          Obytes Starter
+          {translate('onboarding.title')}
         </Text>
         <Text className="mb-2 text-center text-lg text-gray-600">
-          The right way to build your mobile app
+          {translate('onboarding.subtitle')}
         </Text>
 
         <Text className="my-1 pt-6 text-left text-lg">
-          🚀 Production-ready{' '}
+          {translate('onboarding.features.production')}
         </Text>
         <Text className="my-1 text-left text-lg">
-          🥷 Developer experience + Productivity
+          {translate('onboarding.features.dx')}
         </Text>
         <Text className="my-1 text-left text-lg">
-          🧩 Minimal code and dependencies
+          {translate('onboarding.features.minimal')}
         </Text>
         <Text className="my-1 text-left text-lg">
-          💪 well maintained third-party libraries
+          {translate('onboarding.features.maintained')}
         </Text>
       </View>
       <SafeAreaView className="mt-6">
         <Button
-          label="Let's Get Started "
+          label={translate('onboarding.cta')}
           onPress={() => {
             setIsFirstTime(false);
             router.replace('/login');

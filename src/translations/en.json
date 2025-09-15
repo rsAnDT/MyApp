@@ -4,6 +4,7 @@
   },
   "common": {
     "cancel": "Cancel",
+    "create": "Create",
     "ok": "OK"
   },
   "confirm": {
@@ -12,13 +13,57 @@
       "title": "Confirm login"
     }
   },
+  "errors": {
+    "401": "You are not authorized. Please log in again.",
+    "403": "You do not have permission to perform this action.",
+    "503": "Service unavailable. Please try again later.",
+    "504": "Gateway timeout. Please check your network and try again.",
+    "loading_data": "Error loading data",
+    "loading_post": "Error loading post",
+    "title": "Error",
+    "unknown": "Something went wrong."
+  },
+  "feed": {
+    "loading": "Loading data..."
+  },
+  "list": {
+    "empty": "Sorry! No data found"
+  },
+  "login": {
+    "fields": {
+      "email": "Email",
+      "name": "Name",
+      "password": "Password"
+    },
+    "submit": "Login",
+    "subtitle": "Welcome! 👋 This is a demo login screen! Feel free to use any email and password to sign in and try it out.",
+    "title": "Sign In"
+  },
   "network": {
     "message": "Unable to connect. Please check your internet and try again.",
     "ok": "Got it",
     "title": "Network error"
   },
+  "not_found": {
+    "go_home": "Go to home screen!",
+    "message": "This screen doesn't exist.",
+    "title": "Oops!"
+  },
   "onboarding": {
-    "message": "Welcome to obytes app site"
+    "cta": "Let's Get Started",
+    "features": {
+      "dx": "🥷 Developer experience + Productivity",
+      "maintained": "💪 Well maintained third-party libraries",
+      "minimal": "🧩 Minimal code and dependencies",
+      "production": "🚀 Production-ready"
+    },
+    "message": "Welcome to AnDT app site",
+    "subtitle": "The right way to build your mobile app",
+    "title": "AnDT Starter"
+  },
+  "post": {
+    "back": "Feed",
+    "title": "Post"
   },
   "settings": {
     "about": "About",
@@ -48,5 +93,16 @@
     "vietnamese": "Vietnamese",
     "website": "Website"
   },
-  "welcome": "Welcome to obytes app site"
+  "tabs": {
+    "feed": "Feed",
+    "settings": "Settings",
+    "style": "Style"
+  },
+  "validation": {
+    "email_invalid": "Invalid email format",
+    "email_required": "Email is required",
+    "password_min": "Password must be at least 6 characters",
+    "password_required": "Password is required"
+  },
+  "welcome": "Welcome to AnDT app site"
 }

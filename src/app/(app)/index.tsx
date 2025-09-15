@@ -6,7 +6,7 @@ import type { Post } from '@/api';
 import { usePosts } from '@/api';
 import { Card } from '@/components/card';
 import { EmptyList, FocusAwareStatusBar, Text, View } from '@/components/ui';
-import { useLoading } from '@/lib';
+import { translate, useLoading } from '@/lib';
 
 export default function Feed() {
   const { data, isPending, isError } = usePosts();
@@ -17,7 +17,7 @@ export default function Feed() {
   );
 
   const handleFetch = React.useCallback(async () => {
-    show('Đang tải dữ liệu...');
+    show(translate('feed.loading'));
     try {
       await new Promise((r) => setTimeout(r, 1200));
     } finally {
@@ -37,7 +37,7 @@ export default function Feed() {
   if (isError) {
     return (
       <View>
-        <Text> Error Loading data </Text>
+        <Text> {translate('errors.loading_data')} </Text>
       </View>
     );
   }

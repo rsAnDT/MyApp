@@ -26,6 +26,7 @@
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="MyApp"/>
         <data android:scheme="exp+andtapp"/>
+        <data android:scheme="AndtApp"/>
       </intent-filter>
     </activity>
   </application>

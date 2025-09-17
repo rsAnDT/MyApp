@@ -41,7 +41,7 @@ const PACKAGE = 'com.andt.dev'; // android package name
 const NAME = APP_ENV === 'production' ? APP_NAME : `${APP_NAME}.${APP_ENV}`; // app name
 const EXPO_ACCOUNT_OWNER = 'dotrongan2806'; // expo account owner
 const EAS_PROJECT_ID = '500ffb91-2243-4d4f-b409-3d283a2b4405'; // eas project id
-const SCHEME = 'MyApp'; // app scheme
+const SCHEME = 'AndtApp'; // app scheme
 
 /**
  * We declare a function withEnvSuffix that will add a suffix to the variable name based on the APP_ENV
@@ -51,7 +51,13 @@ const SCHEME = 'MyApp'; // app scheme
  */
 
 const withEnvSuffix = (name) => {
-  return APP_ENV === 'production' ? name : `${name}.${APP_ENV}`;
+  let prefix = '';
+  if (APP_ENV === 'development') {
+    prefix = 'dev';
+  } else if (APP_ENV === 'staging') {
+    prefix = 'stg';
+  }
+  return APP_ENV === 'production' ? name : `${name}.${prefix}`;
 };
 
 /**

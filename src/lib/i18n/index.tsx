@@ -10,7 +10,7 @@ i18n.use(initReactI18next).init({
   resources,
   lng: getLanguage() || 'vi', // đặt thành en hoặc vi hoặc ngôn ngữ nào của khách hàng nếu không muốn làm đa ngôn ngữ
   fallbackLng: 'vi',
-  compatibilityJSON: 'v3', // By default React Native projects does not support Intl
+  compatibilityJSON: 'v4', // By default React Native projects does not support Intl
 
   // allows integrating dynamic values into translations.
   interpolation: {

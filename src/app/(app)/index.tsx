@@ -49,6 +49,7 @@ export default function Feed() {
         renderItem={renderItem}
         keyExtractor={(_, index) => `item-${index}`}
         ListEmptyComponent={<EmptyList isLoading={isPending} />}
+        // @ts-expect-error: estimatedItemSize not yet typed in older FlashList
         estimatedItemSize={300}
       />
     </View>

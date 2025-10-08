@@ -18,8 +18,7 @@ import colors from '@/components/ui/colors';
 import { CaretDown } from '@/components/ui/icons';
 
 import type { InputControllerType } from './input';
-import { useModal } from './modal';
-import { Modal } from './modal';
+import { Modal, useModal } from './modal';
 import { Text } from './text';
 
 const selectTv = tv({
@@ -105,6 +104,7 @@ export const Options = React.forwardRef<BottomSheetModal, OptionsProps>(
           keyExtractor={keyExtractor}
           renderItem={renderSelectItem}
           testID={testID ? `${testID}-modal` : undefined}
+          // @ts-expect-error: estimatedItemSize not yet typed in older List
           estimatedItemSize={52}
         />
       </Modal>

@@ -1,8 +1,7 @@
 {
   "cli": {
     "version": ">= 3.8.1",
-    "appVersionSource": "remote",
-    "packageManager": "pnpm"
+    "appVersionSource": "remote"
   },
   "build": {
     "production": {
@@ -66,6 +65,9 @@
         "EXPO_NO_DOTENV": "1"
       }
     }
+  },
+  "hooks": {
+    "eas-build-pre-install": "corepack enable"
   },
   "submit": {
     "production": {}

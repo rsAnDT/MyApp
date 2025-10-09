@@ -11,7 +11,7 @@
 #         - EXPO_TOKEN: Expo token to authenticate with EAS
 #         - You can get it from https://expo.dev/settings/access-tokens
 
-name: EAS Build Stg (Android & IOS) (EAS)
+name: EAS Build Dev (Android & IOS) (EAS)
 
 on:
   workflow_dispatch:
@@ -20,7 +20,7 @@ on:
 
 jobs:
   Build:
-    name: EAS Build Stg (Android & IOS) (EAS)
+    name: EAS Build Dev (Android & IOS) (EAS)
     runs-on: ubuntu-latest
     steps:
       - name: Check for EXPO_TOKEN
@@ -40,7 +40,7 @@ jobs:
       - name: ⏱️ EAS Build
         uses: ./.github/actions/eas-build
         with:
-          APP_ENV: staging
+          APP_ENV: development
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
           VERSION: ${{ github.event.release.tag_name }}
           IOS: true # TODO: set as true when IOS account is ready

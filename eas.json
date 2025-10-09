@@ -6,7 +6,6 @@
   "build": {
     "production": {
       "channel": "production",
-      "installCommand": "corepack enable && pnpm install --froren-lockfile",
       "distribution": "store",
       "pnpm": "9.12.3",
       "ios": {
@@ -24,7 +23,6 @@
     },
     "staging": {
       "distribution": "internal",
-      "installCommand": "corepack enable && pnpm install --froren-lockfile",
       "pnpm": "9.12.3",
       "ios": {
         "image": "latest"
@@ -41,7 +39,6 @@
     },
     "development": {
       "distribution": "internal",
-      "installCommand": "corepack enable && pnpm install --froren-lockfile",
       "pnpm": "9.12.3",
       "ios": {
         "image": "latest"

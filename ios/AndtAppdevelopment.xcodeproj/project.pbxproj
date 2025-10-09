@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0094F94A8A6E512EBF288265 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = FEC73F00BA462F6039910653 /* PrivacyInfo.xcprivacy */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		8B194A48CE2EEAC56DFCCCF8 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 507CD5AA31F68428CE41E63B /* PrivacyInfo.xcprivacy */; };
+		96EEABF8C9D9015EFAB058FB /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4317DD596FC68399826F6 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		C723A1A7ECFF4B2195B9A05D /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C471613A436E4FEFB38AD191 /* Inter.ttf */; };
-		D7D01A803E3439E7B93D3ACF /* libPods-MyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB7F3864F1F6FFF14F3AA95 /* libPods-MyApp.a */; };
-		DBDD7B2C66CFC4090AAA6D25 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972172BE3F6CCBC632C993A4 /* ExpoModulesProvider.swift */; };
+		BCDC5722856646139E6470C3 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA638C41BF944F5FA8230D55 /* Inter.ttf */; };
+		D3741A9158C474428B5A6B13 /* libPods-AndtAppdevelopment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE10FC6C32B2E10B8B19551 /* libPods-AndtAppdevelopment.a */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		091411A93FBCDDB22C5B69FD /* Pods-MyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.release.xcconfig"; path = "Target Support Files/Pods-MyApp/Pods-MyApp.release.xcconfig"; sourceTree = "<group>"; };
-		0DB7F3864F1F6FFF14F3AA95 /* libPods-MyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MyApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MyApp/Info.plist; sourceTree = "<group>"; };
-		507CD5AA31F68428CE41E63B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = MyApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		972172BE3F6CCBC632C993A4 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-MyApp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = MyApp/SplashScreen.storyboard; sourceTree = "<group>"; };
+		09C4317DD596FC68399826F6 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-AndtAppdevelopment/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* AndtAppdevelopment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndtAppdevelopment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AndtAppdevelopment/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AndtAppdevelopment/Info.plist; sourceTree = "<group>"; };
+		1481E3B8139CB606C56877B6 /* Pods-AndtAppdevelopment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndtAppdevelopment.release.xcconfig"; path = "Target Support Files/Pods-AndtAppdevelopment/Pods-AndtAppdevelopment.release.xcconfig"; sourceTree = "<group>"; };
+		610E995F1AC98DB8558B446C /* Pods-AndtAppdevelopment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndtAppdevelopment.debug.xcconfig"; path = "Target Support Files/Pods-AndtAppdevelopment/Pods-AndtAppdevelopment.debug.xcconfig"; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = AndtAppdevelopment/SplashScreen.storyboard; sourceTree = "<group>"; };
+		AA638C41BF944F5FA8230D55 /* Inter.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Inter.ttf; path = ../assets/fonts/Inter.ttf; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		C471613A436E4FEFB38AD191 /* Inter.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Inter.ttf; path = ../assets/fonts/Inter.ttf; sourceTree = "<group>"; };
+		BBE10FC6C32B2E10B8B19551 /* libPods-AndtAppdevelopment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AndtAppdevelopment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		EDF1B2097F54388DEA13BBB4 /* Pods-MyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.debug.xcconfig"; path = "Target Support Files/Pods-MyApp/Pods-MyApp.debug.xcconfig"; sourceTree = "<group>"; };
-		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MyApp/AppDelegate.swift; sourceTree = "<group>"; };
-		F11748442D0722820044C1D9 /* MyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MyApp-Bridging-Header.h"; path = "MyApp/MyApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AndtAppdevelopment/AppDelegate.swift; sourceTree = "<group>"; };
+		F11748442D0722820044C1D9 /* AndtAppdevelopment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AndtAppdevelopment-Bridging-Header.h"; path = "AndtAppdevelopment/AndtAppdevelopment-Bridging-Header.h"; sourceTree = "<group>"; };
+		FEC73F00BA462F6039910653 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = AndtAppdevelopment/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,44 +39,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7D01A803E3439E7B93D3ACF /* libPods-MyApp.a in Frameworks */,
+				D3741A9158C474428B5A6B13 /* libPods-AndtAppdevelopment.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B07FAE1A68108700A75B9A /* MyApp */ = {
+		05F1E01368A2387BA1A8B4C6 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				119C84A2BEC69B000702F13F /* AndtAppdevelopment */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		119C84A2BEC69B000702F13F /* AndtAppdevelopment */ = {
+			isa = PBXGroup;
+			children = (
+				09C4317DD596FC68399826F6 /* ExpoModulesProvider.swift */,
+			);
+			name = AndtAppdevelopment;
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* AndtAppdevelopment */ = {
 			isa = PBXGroup;
 			children = (
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
-				F11748442D0722820044C1D9 /* MyApp-Bridging-Header.h */,
+				F11748442D0722820044C1D9 /* AndtAppdevelopment-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				507CD5AA31F68428CE41E63B /* PrivacyInfo.xcprivacy */,
+				FEC73F00BA462F6039910653 /* PrivacyInfo.xcprivacy */,
 			);
-			name = MyApp;
-			sourceTree = "<group>";
-		};
-		2B677FF6FCE7F3A11469236B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EDF1B2097F54388DEA13BBB4 /* Pods-MyApp.debug.xcconfig */,
-				091411A93FBCDDB22C5B69FD /* Pods-MyApp.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
+			name = AndtAppdevelopment;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				0DB7F3864F1F6FFF14F3AA95 /* libPods-MyApp.a */,
+				BBE10FC6C32B2E10B8B19551 /* libPods-AndtAppdevelopment.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5313182DC8624283BBB443AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA638C41BF944F5FA8230D55 /* Inter.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -89,13 +104,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* MyApp */,
+				13B07FAE1A68108700A75B9A /* AndtAppdevelopment */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				F8FEBC9A461741E7BF579560 /* Resources */,
-				2B677FF6FCE7F3A11469236B /* Pods */,
-				F0F2C32F1AA9FEDCAA646DDF /* ExpoModulesProviders */,
+				5313182DC8624283BBB443AF /* Resources */,
+				F82E6BC8232C377B64DC8871 /* Pods */,
+				05F1E01368A2387BA1A8B4C6 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -105,7 +120,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* MyApp.app */,
+				13B07F961A680F5B00A75B9A /* AndtAppdevelopment.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,57 +131,42 @@
 				BB2F792C24A3F905000567C9 /* Expo.plist */,
 			);
 			name = Supporting;
-			path = MyApp/Supporting;
+			path = AndtAppdevelopment/Supporting;
 			sourceTree = "<group>";
 		};
-		EFE6CF4E9D56DAC24B3B40F0 /* MyApp */ = {
+		F82E6BC8232C377B64DC8871 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				972172BE3F6CCBC632C993A4 /* ExpoModulesProvider.swift */,
+				610E995F1AC98DB8558B446C /* Pods-AndtAppdevelopment.debug.xcconfig */,
+				1481E3B8139CB606C56877B6 /* Pods-AndtAppdevelopment.release.xcconfig */,
 			);
-			name = MyApp;
-			sourceTree = "<group>";
-		};
-		F0F2C32F1AA9FEDCAA646DDF /* ExpoModulesProviders */ = {
-			isa = PBXGroup;
-			children = (
-				EFE6CF4E9D56DAC24B3B40F0 /* MyApp */,
-			);
-			name = ExpoModulesProviders;
-			sourceTree = "<group>";
-		};
-		F8FEBC9A461741E7BF579560 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C471613A436E4FEFB38AD191 /* Inter.ttf */,
-			);
-			name = Resources;
-			path = "";
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* MyApp */ = {
+		13B07F861A680F5B00A75B9A /* AndtAppdevelopment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MyApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AndtAppdevelopment" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				AD62D88477A6688D91312D17 /* [Expo] Configure project */,
+				02AA5CD929B31B6065AC3FCB /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				45D6A11FE6B7374FD0DFC34F /* [CP] Embed Pods Frameworks */,
+				75226912A666626AF425EC70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MyApp;
-			productName = MyApp;
-			productReference = 13B07F961A680F5B00A75B9A /* MyApp.app */;
+			name = AndtAppdevelopment;
+			productName = AndtAppdevelopment;
+			productReference = 13B07F961A680F5B00A75B9A /* AndtAppdevelopment.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MyApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AndtAppdevelopment" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -195,7 +195,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* MyApp */,
+				13B07F861A680F5B00A75B9A /* AndtAppdevelopment */,
 			);
 		};
 /* End PBXProject section */
@@ -208,8 +208,8 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				C723A1A7ECFF4B2195B9A05D /* Inter.ttf in Resources */,
-				8B194A48CE2EEAC56DFCCCF8 /* PrivacyInfo.xcprivacy in Resources */,
+				BCDC5722856646139E6470C3 /* Inter.ttf in Resources */,
+				0094F94A8A6E512EBF288265 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +231,25 @@
 			shellPath = /bin/sh;
 			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
 		};
+		02AA5CD929B31B6065AC3FCB /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-AndtAppdevelopment/expo-configure-project.sh\"\n";
+		};
 		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,20 +265,20 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AndtAppdevelopment-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		45D6A11FE6B7374FD0DFC34F /* [CP] Embed Pods Frameworks */ = {
+		75226912A666626AF425EC70 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AndtAppdevelopment/Pods-AndtAppdevelopment-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -268,7 +287,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AndtAppdevelopment/Pods-AndtAppdevelopment-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
@@ -277,7 +296,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AndtAppdevelopment/Pods-AndtAppdevelopment-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
@@ -312,27 +331,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AndtAppdevelopment/Pods-AndtAppdevelopment-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		AD62D88477A6688D91312D17 /* [Expo] Configure project */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-MyApp/expo-configure-project.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -342,7 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				DBDD7B2C66CFC4090AAA6D25 /* ExpoModulesProvider.swift in Sources */,
+				96EEABF8C9D9015EFAB058FB /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,18 +351,18 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDF1B2097F54388DEA13BBB4 /* Pods-MyApp.debug.xcconfig */;
+			baseConfigurationReference = 610E995F1AC98DB8558B446C /* Pods-AndtAppdevelopment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = MyApp/MyApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AndtAppdevelopment/AndtAppdevelopment.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = MyApp/Info.plist;
+				INFOPLIST_FILE = AndtAppdevelopment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,8 +376,8 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = gzr.bsd.dev;
-				PRODUCT_NAME = "AndtAppdevelopment";
-				SWIFT_OBJC_BRIDGING_HEADER = "MyApp/MyApp-Bridging-Header.h";
+				PRODUCT_NAME = AndtAppdevelopment;
+				SWIFT_OBJC_BRIDGING_HEADER = "AndtAppdevelopment/AndtAppdevelopment-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,13 +387,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 091411A93FBCDDB22C5B69FD /* Pods-MyApp.release.xcconfig */;
+			baseConfigurationReference = 1481E3B8139CB606C56877B6 /* Pods-AndtAppdevelopment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = MyApp/MyApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AndtAppdevelopment/AndtAppdevelopment.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = MyApp/Info.plist;
+				INFOPLIST_FILE = AndtAppdevelopment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,8 +407,8 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = gzr.bsd.dev;
-				PRODUCT_NAME = "AndtAppdevelopment";
-				SWIFT_OBJC_BRIDGING_HEADER = "MyApp/MyApp-Bridging-Header.h";
+				PRODUCT_NAME = AndtAppdevelopment;
+				SWIFT_OBJC_BRIDGING_HEADER = "AndtAppdevelopment/AndtAppdevelopment-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -542,7 +542,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MyApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AndtAppdevelopment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -551,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MyApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AndtAppdevelopment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-set -e
-
-echo "Enabling corepack and installing dependencies with pnpm..."
-corepack enable
-pnpm install --frozen-lockfile

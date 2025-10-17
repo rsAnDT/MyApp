@@ -11,16 +11,14 @@
 #         - EXPO_TOKEN: Expo token to authenticate with EAS
 #         - You can get it from https://expo.dev/settings/access-tokens
 
-name: EAS Build Staging (Android & IOS)
+name: Build APP ENV STG
 
 on:
   workflow_dispatch:
-  release:
-    types: [published]
 
 jobs:
   Build:
-    name: EAS Build Staging (Android & IOS)
+    name: Build APP ENV STG
     runs-on: ubuntu-latest
     steps:
       - name: Check for EXPO_TOKEN

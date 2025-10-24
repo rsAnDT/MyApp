@@ -15,9 +15,11 @@ export * from './network-error-modal';
 export * from './progress-bar';
 export * from './responsive-container';
 export * from './responsive-layout';
+export * from './responsive-view';
 export * from './select';
 export * from './text';
 export * from './utils';
+export * from './web-tab-bar';
 
 // export base components from react-native
 export {

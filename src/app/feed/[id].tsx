@@ -9,7 +9,7 @@ import {
   Text,
   View,
 } from '@/components/ui';
-import { translate } from '@/lib';
+import { getWebScreenOptions, translate } from '@/lib';
 
 export default function Post() {
   const local = useLocalSearchParams<{ id: string }>();
@@ -24,10 +24,10 @@ export default function Post() {
       <ResponsiveContainer maxWidth="2xl" className="flex-1">
         <View className="flex-1 justify-center p-3">
           <Stack.Screen
-            options={{
+            options={getWebScreenOptions({
               title: translate('post.title'),
               headerBackTitle: translate('post.back'),
-            }}
+            })}
           />
           <FocusAwareStatusBar />
           <ActivityIndicator />
@@ -40,10 +40,10 @@ export default function Post() {
       <ResponsiveContainer maxWidth="2xl" className="flex-1">
         <View className="flex-1 justify-center p-3">
           <Stack.Screen
-            options={{
+            options={getWebScreenOptions({
               title: translate('post.title'),
               headerBackTitle: translate('post.back'),
-            }}
+            })}
           />
           <FocusAwareStatusBar />
           <Text className="text-center">
@@ -58,10 +58,10 @@ export default function Post() {
     <ResponsiveContainer maxWidth="2xl" className="flex-1">
       <View className="flex-1 p-3 ">
         <Stack.Screen
-          options={{
+          options={getWebScreenOptions({
             title: translate('post.title'),
             headerBackTitle: translate('post.back'),
-          }}
+          })}
         />
         <FocusAwareStatusBar />
         <Text className="text-xl">{data.title}</Text>

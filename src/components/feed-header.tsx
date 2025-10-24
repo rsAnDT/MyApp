@@ -1,7 +1,7 @@
 import React from 'react';
 import { Platform } from 'react-native';
 
-import { Text, View } from '@/components/ui';
+import { Pressable, Text, View } from '@/components/ui';
 import { translate } from '@/lib';
 
 type FeedHeaderProps = {
@@ -24,21 +24,19 @@ function WebFeedHeader({ onCreatePost }: FeedHeaderProps) {
             {translate('tabs.feed')}
           </Text>
           <Text className="text-sm text-gray-600 dark:text-gray-400">
-            Khám phá những bài viết thú vị
+            {translate('tabs.feed_subtitle')}
           </Text>
         </View>
 
         {onCreatePost && (
-          <View className="flex-row space-x-3">
-            <View
-              className="cursor-pointer rounded-lg bg-blue-600 px-4 py-2 hover:bg-blue-700"
-              // onClick={onCreatePost}
-            >
-              <Text className="text-sm font-medium text-white">
-                {translate('common.create')}
-              </Text>
-            </View>
-          </View>
+          <Pressable
+            onPress={onCreatePost}
+            className="cursor-pointer rounded-lg bg-blue-600 px-4 py-2 hover:bg-blue-700"
+          >
+            <Text className="text-sm font-medium text-white">
+              {translate('common.create')}
+            </Text>
+          </Pressable>
         )}
       </View>
     </View>

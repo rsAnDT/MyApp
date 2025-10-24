@@ -19,6 +19,7 @@ export * from './responsive-view';
 export * from './select';
 export * from './text';
 export * from './utils';
+export * from './web-footer';
 export * from './web-tab-bar';
 
 // export base components from react-native

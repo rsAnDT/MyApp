@@ -10,6 +10,7 @@ import {
   ScrollView,
   Text,
   View,
+  WebFooter,
 } from '@/components/ui';
 import { translate } from '@/lib';
 
@@ -69,6 +70,7 @@ export function WebStyleView() {
                 <Inputs />
               </View>
             </View>
+            <WebFooter />
           </ScrollView>
         </View>
       </ResponsiveContainer>

@@ -72,6 +72,9 @@
   "post": {
     "add": "Thêm bài viết",
     "add_button": "Thêm bài viết",
+    "add_error_message": "Không thể thêm bài viết. Vui lòng thử lại.",
+    "add_success_message": "Bài viết đã được thêm thành công!",
+    "add_success_title": "Thành công",
     "back": "Bảng tin",
     "content": "Nội dung",
     "title": "Bài viết",

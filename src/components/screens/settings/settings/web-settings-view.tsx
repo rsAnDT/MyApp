@@ -11,6 +11,7 @@ import {
   ScrollView,
   Text,
   View,
+  WebFooter,
 } from '@/components/ui';
 import { Github, Rate, Share, Support, Website } from '@/components/ui/icons';
 import { translate } from '@/lib';
@@ -127,6 +128,7 @@ export function WebSettingsView({ signOut }: WebSettingsViewProps) {
                 </ItemsContainer>
               </View>
             </View>
+            <WebFooter />
           </ScrollView>
         </View>
       </ResponsiveContainer>

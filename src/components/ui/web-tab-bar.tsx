@@ -16,8 +16,8 @@ export function WebTabBar({
   }
 
   return (
-    <View className="flex-row items-center justify-center border-t border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
-      <View className="mx-auto flex w-full max-w-7xl flex-row items-center justify-center gap-2 px-6 py-3">
+    <View className="flex-row items-center justify-center border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
+      <View className="mx-auto flex w-full max-w-7xl flex-row items-center justify-center gap-1 px-4 py-2">
         {state.routes.map((route, index) => {
           const { options } = descriptors[route.key];
           const label =
@@ -45,21 +45,21 @@ export function WebTabBar({
             <Pressable
               key={route.key}
               onPress={onPress}
-              className={`flex-1 items-center justify-center rounded-lg px-6 py-3 transition-colors ${
+              className={`flex-1 items-center justify-center rounded-lg px-4 py-2 transition-colors ${
                 isFocused
                   ? 'bg-blue-50 dark:bg-blue-900/20'
                   : 'hover:bg-gray-100 dark:hover:bg-gray-700/50'
               }`}
             >
-              <View className="flex-row items-center gap-3">
+              <View className="flex-row items-center gap-2">
                 {options.tabBarIcon &&
                   options.tabBarIcon({
                     focused: isFocused,
                     color: isFocused ? '#3b82f6' : '#6b7280',
-                    size: 24,
+                    size: 20,
                   })}
                 <Text
-                  className={`text-base font-medium ${
+                  className={`text-sm font-medium ${
                     isFocused
                       ? 'text-blue-600 dark:text-blue-400'
                       : 'text-gray-700 dark:text-gray-300'

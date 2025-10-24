@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { Env } from '@env';
 import { useColorScheme } from 'nativewind';
 
@@ -9,6 +8,7 @@ import { ThemeItem } from '@/components/settings/theme-item';
 import {
   colors,
   FocusAwareStatusBar,
+  ResponsiveContainer,
   ScrollView,
   Text,
   View,
@@ -22,9 +22,8 @@ export default function Settings() {
   const iconColor =
     colorScheme === 'dark' ? colors.neutral[400] : colors.neutral[500];
   return (
-    <>
+    <ResponsiveContainer maxWidth="2xl" className="flex-1">
       <FocusAwareStatusBar />
-
       <ScrollView>
         <View className="flex-1 px-4 pt-16 ">
           <Text className="text-xl font-bold">
@@ -80,6 +79,6 @@ export default function Settings() {
           </View>
         </View>
       </ScrollView>
-    </>
+    </ResponsiveContainer>
   );
 }

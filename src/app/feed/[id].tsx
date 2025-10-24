@@ -5,6 +5,7 @@ import { usePost } from '@/api';
 import {
   ActivityIndicator,
   FocusAwareStatusBar,
+  ResponsiveContainer,
   Text,
   View,
 } from '@/components/ui';
@@ -20,21 +21,42 @@ export default function Post() {
 
   if (isPending) {
     return (
-      <View className="flex-1 justify-center  p-3">
-        <Stack.Screen
-          options={{
-            title: translate('post.title'),
-            headerBackTitle: translate('post.back'),
-          }}
-        />
-        <FocusAwareStatusBar />
-        <ActivityIndicator />
-      </View>
+      <ResponsiveContainer maxWidth="2xl" className="flex-1">
+        <View className="flex-1 justify-center p-3">
+          <Stack.Screen
+            options={{
+              title: translate('post.title'),
+              headerBackTitle: translate('post.back'),
+            }}
+          />
+          <FocusAwareStatusBar />
+          <ActivityIndicator />
+        </View>
+      </ResponsiveContainer>
     );
   }
   if (isError) {
     return (
-      <View className="flex-1 justify-center p-3">
+      <ResponsiveContainer maxWidth="2xl" className="flex-1">
+        <View className="flex-1 justify-center p-3">
+          <Stack.Screen
+            options={{
+              title: translate('post.title'),
+              headerBackTitle: translate('post.back'),
+            }}
+          />
+          <FocusAwareStatusBar />
+          <Text className="text-center">
+            {translate('errors.loading_post')}
+          </Text>
+        </View>
+      </ResponsiveContainer>
+    );
+  }
+
+  return (
+    <ResponsiveContainer maxWidth="2xl" className="flex-1">
+      <View className="flex-1 p-3 ">
         <Stack.Screen
           options={{
             title: translate('post.title'),
@@ -42,22 +64,9 @@ export default function Post() {
           }}
         />
         <FocusAwareStatusBar />
-        <Text className="text-center">{translate('errors.loading_post')}</Text>
+        <Text className="text-xl">{data.title}</Text>
+        <Text>{data.body} </Text>
       </View>
-    );
-  }
-
-  return (
-    <View className="flex-1 p-3 ">
-      <Stack.Screen
-        options={{
-          title: translate('post.title'),
-          headerBackTitle: translate('post.back'),
-        }}
-      />
-      <FocusAwareStatusBar />
-      <Text className="text-xl">{data.title}</Text>
-      <Text>{data.body} </Text>
-    </View>
+    </ResponsiveContainer>
   );
 }

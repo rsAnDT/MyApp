@@ -9,6 +9,7 @@ import { useAddPost } from '@/api';
 import {
   Button,
   ControlledInput,
+  ResponsiveContainer,
   showErrorMessage,
   View,
 } from '@/components/ui';
@@ -46,7 +47,7 @@ export default function AddPost() {
     );
   };
   return (
-    <>
+    <ResponsiveContainer maxWidth="2xl" className="flex-1">
       <Stack.Screen
         options={{
           title: 'Add Post',
@@ -74,6 +75,6 @@ export default function AddPost() {
           testID="add-post-button"
         />
       </View>
-    </>
+    </ResponsiveContainer>
   );
 }

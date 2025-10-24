@@ -1,5 +1,6 @@
 import { Link, Redirect, SplashScreen, Tabs } from 'expo-router';
 import React, { useCallback, useEffect } from 'react';
+import { Platform } from 'react-native';
 
 import { Pressable, Text } from '@/components/ui';
 import {
@@ -29,8 +30,21 @@ export default function TabLayout() {
   if (status === 'signOut') {
     return <Redirect href="/login" />;
   }
+  const tabBarStyle =
+    Platform.OS === 'web'
+      ? {
+          maxWidth: 672, // 2xl max-width
+          alignSelf: 'center' as const,
+          marginHorizontal: 'auto' as const,
+        }
+      : undefined;
+
   return (
-    <Tabs>
+    <Tabs
+      screenOptions={{
+        tabBarStyle: tabBarStyle,
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{

@@ -3,7 +3,7 @@ import React from 'react';
 
 import type { LoginFormProps } from '@/components/login-form';
 import { LoginForm } from '@/components/login-form';
-import { FocusAwareStatusBar } from '@/components/ui';
+import { FocusAwareStatusBar, ResponsiveContainer } from '@/components/ui';
 import { confirm, translate, useAuth, useLoading } from '@/lib';
 
 export default function Login() {
@@ -39,9 +39,9 @@ export default function Login() {
     });
   };
   return (
-    <>
+    <ResponsiveContainer maxWidth="md" className="flex-1">
       <FocusAwareStatusBar />
       <LoginForm onSubmit={onSubmit} />
-    </>
+    </ResponsiveContainer>
   );
 }

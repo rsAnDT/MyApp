@@ -9,9 +9,11 @@ import { useAddPost } from '@/api';
 import {
   Button,
   ControlledInput,
+  ResponsiveContainer,
   showErrorMessage,
   View,
 } from '@/components/ui';
+import { getWebScreenOptions, translate } from '@/lib';
 
 const schema = z.object({
   title: z.string().min(10),
@@ -46,34 +48,34 @@ export default function AddPost() {
     );
   };
   return (
-    <>
+    <ResponsiveContainer maxWidth="2xl" className="flex-1">
       <Stack.Screen
-        options={{
-          title: 'Add Post',
-          headerBackTitle: 'Feed',
-        }}
+        options={getWebScreenOptions({
+          title: translate('post.add'),
+          headerBackTitle: translate('post.back'),
+        })}
       />
       <View className="flex-1 p-4 ">
         <ControlledInput
           name="title"
-          label="Title"
+          label={translate('post.title_field')}
           control={control}
           testID="title"
         />
         <ControlledInput
           name="body"
-          label="Content"
+          label={translate('post.content')}
           control={control}
           multiline
           testID="body-input"
         />
         <Button
-          label="Add Post"
+          label={translate('post.add_button')}
           loading={isPending}
           onPress={handleSubmit(onSubmit)}
           testID="add-post-button"
         />
       </View>
-    </>
+    </ResponsiveContainer>
   );
 }

@@ -1,7 +1,8 @@
 import { Link, Redirect, SplashScreen, Tabs } from 'expo-router';
 import React, { useCallback, useEffect } from 'react';
+import { Platform } from 'react-native';
 
-import { Pressable, Text } from '@/components/ui';
+import { Pressable, Text, WebTabBar } from '@/components/ui';
 import {
   Feed as FeedIcon,
   Settings as SettingsIcon,
@@ -29,14 +30,20 @@ export default function TabLayout() {
   if (status === 'signOut') {
     return <Redirect href="/login" />;
   }
+
   return (
-    <Tabs>
+    <Tabs
+      tabBar={
+        Platform.OS === 'web' ? (props) => <WebTabBar {...props} /> : undefined
+      }
+    >
       <Tabs.Screen
         name="index"
         options={{
           title: translate('tabs.feed'),
           tabBarIcon: ({ color }) => <FeedIcon color={color} />,
           headerRight: () => <CreateNewPostLink />,
+          headerShown: Platform.OS !== 'web', // Ẩn header trên web
           tabBarButtonTestID: 'feed-tab',
         }}
       />

@@ -35,9 +35,17 @@
       "name": "Name",
       "password": "Password"
     },
+    "footer": {
+      "agree": "By signing in, you agree to our",
+      "and": "and",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
     "submit": "Login",
     "subtitle": "Welcome! 👋 This is a demo login screen! Feel free to use any email and password to sign in and try it out.",
-    "title": "Sign In"
+    "title": "Sign In",
+    "welcome": "Welcome Back",
+    "welcome_subtitle": "Sign in to your account"
   },
   "network": {
     "message": "Unable to connect. Please check your internet and try again.",
@@ -62,8 +70,12 @@
     "title": "AnDT Starter"
   },
   "post": {
+    "add": "Add Post",
+    "add_button": "Add Post",
     "back": "Feed",
-    "title": "Post"
+    "content": "Content",
+    "title": "Post",
+    "title_field": "Title"
   },
   "settings": {
     "about": "About",
@@ -79,6 +91,7 @@
     "privacy": "Privacy Policy",
     "rate": "Rate",
     "share": "Share",
+    "subtitle": "Manage your settings and preferences",
     "support": "Support",
     "support_us": "Support Us",
     "terms": "Terms of Service",
@@ -93,8 +106,13 @@
     "vietnamese": "Vietnamese",
     "website": "Website"
   },
+  "style": {
+    "subtitle": "View and customize UI components",
+    "title": "Style"
+  },
   "tabs": {
     "feed": "Feed",
+    "feed_subtitle": "Discover interesting posts",
     "settings": "Settings",
     "style": "Style"
   },

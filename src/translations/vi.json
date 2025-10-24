@@ -35,9 +35,17 @@
       "name": "Tên",
       "password": "Mật khẩu"
     },
+    "footer": {
+      "agree": "Bằng cách đăng nhập, bạn đồng ý với",
+      "and": "và",
+      "privacy": "Chính sách bảo mật",
+      "terms": "Điều khoản sử dụng"
+    },
     "submit": "Đăng nhập",
     "subtitle": "Chào mừng! 👋 Đây là màn hình đăng nhập demo! Bạn có thể dùng bất kỳ email và mật khẩu để thử.",
-    "title": "Đăng nhập"
+    "title": "Đăng nhập",
+    "welcome": "Welcome Back",
+    "welcome_subtitle": "Đăng nhập vào tài khoản của bạn"
   },
   "network": {
     "message": "Không thể kết nối. Vui lòng kiểm tra internet và thử lại.",
@@ -62,8 +70,12 @@
     "title": "AnDT Starter"
   },
   "post": {
+    "add": "Thêm bài viết",
+    "add_button": "Thêm bài viết",
     "back": "Bảng tin",
-    "title": "Bài viết"
+    "content": "Nội dung",
+    "title": "Bài viết",
+    "title_field": "Tiêu đề"
   },
   "settings": {
     "about": "Giới thiệu",
@@ -79,6 +91,7 @@
     "privacy": "Chính sách quyền riêng tư",
     "rate": "Đánh giá",
     "share": "Chia sẻ",
+    "subtitle": "Quản lý cài đặt và tùy chọn của bạn",
     "support": "Hỗ trợ",
     "support_us": "Ủng hộ chúng tôi",
     "terms": "Điều khoản dịch vụ",
@@ -93,8 +106,13 @@
     "vietnamese": "Tiếng Việt",
     "website": "Trang web"
   },
+  "style": {
+    "subtitle": "Xem và tùy chỉnh các thành phần UI",
+    "title": "Kiểu dáng"
+  },
   "tabs": {
     "feed": "Bảng tin",
+    "feed_subtitle": "Khám phá những bài viết thú vị",
     "settings": "Cài đặt",
     "style": "Kiểu dáng"
   },

@@ -1,20 +1,19 @@
 import { useFocusEffect } from '@react-navigation/native';
-import { FlashList } from '@shopify/flash-list';
+import { useRouter } from 'expo-router';
 import React from 'react';
 
-import type { Post } from '@/api';
 import { usePosts } from '@/api';
-import { Card } from '@/components/card';
-import { EmptyList, FocusAwareStatusBar, Text, View } from '@/components/ui';
+import { FeedScreen } from '@/components/screens/home/feed';
 import { translate, useLoading } from '@/lib';
 
 export default function Feed() {
   const { data, isPending, isError } = usePosts();
   const { show, hide } = useLoading();
-  const renderItem = React.useCallback(
-    ({ item }: { item: Post }) => <Card {...item} />,
-    []
-  );
+  const router = useRouter();
+
+  const handleCreatePost = React.useCallback(() => {
+    router.push('/feed/add-post');
+  }, [router]);
 
   const handleFetch = React.useCallback(async () => {
     show(translate('feed.loading'));
@@ -34,23 +33,12 @@ export default function Feed() {
     }, [handleFetch, hide])
   );
 
-  if (isError) {
-    return (
-      <View>
-        <Text> {translate('errors.loading_data')} </Text>
-      </View>
-    );
-  }
   return (
-    <View className="flex-1 ">
-      <FocusAwareStatusBar />
-      <FlashList
-        data={data}
-        renderItem={renderItem}
-        keyExtractor={(_, index) => `item-${index}`}
-        ListEmptyComponent={<EmptyList isLoading={isPending} />}
-        estimatedItemSize={300}
-      />
-    </View>
+    <FeedScreen
+      data={data || []}
+      isPending={isPending}
+      isError={isError}
+      onCreatePost={handleCreatePost}
+    />
   );
 }

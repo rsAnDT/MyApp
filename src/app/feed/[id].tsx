@@ -5,10 +5,11 @@ import { usePost } from '@/api';
 import {
   ActivityIndicator,
   FocusAwareStatusBar,
+  ResponsiveContainer,
   Text,
   View,
 } from '@/components/ui';
-import { translate } from '@/lib';
+import { getWebScreenOptions, translate } from '@/lib';
 
 export default function Post() {
   const local = useLocalSearchParams<{ id: string }>();
@@ -20,44 +21,52 @@ export default function Post() {
 
   if (isPending) {
     return (
-      <View className="flex-1 justify-center  p-3">
-        <Stack.Screen
-          options={{
-            title: translate('post.title'),
-            headerBackTitle: translate('post.back'),
-          }}
-        />
-        <FocusAwareStatusBar />
-        <ActivityIndicator />
-      </View>
+      <ResponsiveContainer maxWidth="2xl" className="flex-1">
+        <View className="flex-1 justify-center p-3">
+          <Stack.Screen
+            options={getWebScreenOptions({
+              title: translate('post.title'),
+              headerBackTitle: translate('post.back'),
+            })}
+          />
+          <FocusAwareStatusBar />
+          <ActivityIndicator />
+        </View>
+      </ResponsiveContainer>
     );
   }
   if (isError) {
     return (
-      <View className="flex-1 justify-center p-3">
-        <Stack.Screen
-          options={{
-            title: translate('post.title'),
-            headerBackTitle: translate('post.back'),
-          }}
-        />
-        <FocusAwareStatusBar />
-        <Text className="text-center">{translate('errors.loading_post')}</Text>
-      </View>
+      <ResponsiveContainer maxWidth="2xl" className="flex-1">
+        <View className="flex-1 justify-center p-3">
+          <Stack.Screen
+            options={getWebScreenOptions({
+              title: translate('post.title'),
+              headerBackTitle: translate('post.back'),
+            })}
+          />
+          <FocusAwareStatusBar />
+          <Text className="text-center">
+            {translate('errors.loading_post')}
+          </Text>
+        </View>
+      </ResponsiveContainer>
     );
   }
 
   return (
-    <View className="flex-1 p-3 ">
-      <Stack.Screen
-        options={{
-          title: translate('post.title'),
-          headerBackTitle: translate('post.back'),
-        }}
-      />
-      <FocusAwareStatusBar />
-      <Text className="text-xl">{data.title}</Text>
-      <Text>{data.body} </Text>
-    </View>
+    <ResponsiveContainer maxWidth="2xl" className="flex-1">
+      <View className="flex-1 p-3 ">
+        <Stack.Screen
+          options={getWebScreenOptions({
+            title: translate('post.title'),
+            headerBackTitle: translate('post.back'),
+          })}
+        />
+        <FocusAwareStatusBar />
+        <Text className="text-xl">{data.title}</Text>
+        <Text>{data.body} </Text>
+      </View>
+    </ResponsiveContainer>
   );
 }

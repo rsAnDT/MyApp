@@ -51,11 +51,13 @@ export function ConfirmDialog({
         )}
 
         <View className="mt-2 flex-row items-center justify-center gap-3">
-          <Button
-            variant="secondary"
-            label={buttons?.cancel?.label || translate('common.cancel')}
-            onPress={() => handlePress('cancel')}
-          />
+          {buttons?.cancel && (
+            <Button
+              variant="secondary"
+              label={buttons.cancel.label || translate('common.cancel')}
+              onPress={() => handlePress('cancel')}
+            />
+          )}
           <Button
             label={buttons?.ok?.label || translate('common.ok')}
             onPress={() => handlePress('ok')}

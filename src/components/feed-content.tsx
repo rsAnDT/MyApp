@@ -3,7 +3,7 @@ import React from 'react';
 import { Platform, StyleSheet } from 'react-native';
 
 import type { Post } from '@/api';
-import { EmptyList, ScrollView, View } from '@/components/ui';
+import { EmptyList, ScrollView, View, WebFooter } from '@/components/ui';
 
 type FeedContentProps = {
   data: Post[];
@@ -44,6 +44,7 @@ function WebFeedContent({ data, isPending, renderItem }: FeedContentProps) {
           </View>
         ))}
       </View>
+      <WebFooter />
     </ScrollView>
   );
 }

@@ -77,3 +77,11 @@ pnpm android
 
 - enterpriseProvisioning : universal | adhoc (set cai nay de github action biet dung cai nao khi build)
 - "channel": "staging" : them cai nay , chi khi nao dung expo-updates , con khong thi bo di
+
+## WEB
+
+- Link demo : https://andt-base-pjhzfvw1g-do-trong-ans-projects.vercel.app
+- Vercel : https://vercel.com/do-trong-ans-projects/andt-base-rn/JBPoFsMrpZrSXPdAsUPAUDNkHK3f
+- setup vercel : sudo npm i -g vercel
+- Khi xong web thì chạy lệnh : npx expo export --platform web => sẽ xuất ra folder dist
+- Upload lên vercel : vercel --prod --cwd ./dist

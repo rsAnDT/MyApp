@@ -36,6 +36,9 @@ export default function TabLayout() {
       tabBar={
         Platform.OS === 'web' ? (props) => <WebTabBar {...props} /> : undefined
       }
+      screenOptions={{
+        tabBarPosition: Platform.OS === 'web' ? 'top' : 'bottom',
+      }}
     >
       <Tabs.Screen
         name="index"

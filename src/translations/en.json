@@ -72,6 +72,9 @@
   "post": {
     "add": "Add Post",
     "add_button": "Add Post",
+    "add_error_message": "Failed to add post. Please try again.",
+    "add_success_message": "Post has been added successfully!",
+    "add_success_title": "Success",
     "back": "Feed",
     "content": "Content",
     "title": "Post",

@@ -33,8 +33,8 @@ export default function TabLayout() {
 
   return (
     <Tabs
-      tabBar={(props) =>
-        Platform.OS === 'web' ? <WebTabBar {...props} /> : undefined
+      tabBar={
+        Platform.OS === 'web' ? (props) => <WebTabBar {...props} /> : undefined
       }
     >
       <Tabs.Screen
